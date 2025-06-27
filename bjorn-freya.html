@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Bjorn e Freya – O Urso Polar e a Raposa-do-Ártico</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Crimson Text", serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    #video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100vw;
+      min-height: 100vh;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      object-fit: cover;
+      background: linear-gradient(120deg, #ffe39c 0%, #fffbe6 100%);
+    }
+    .conteudo-conto {
+      background: #fffbe6f7; 
+      border-radius: 16px;
+      box-shadow: 0 4px 28px #d1a95b40;
+      max-width: 700px;
+      width: 96vw;
+      padding: 2.5em 2em 2.8em 2em;
+      margin: 3em auto 1.5em auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .titulo-conto {
+      font-family: "Playfair Display", serif;
+      color: #ba2d2d;
+      font-size: 2.3em;
+      text-align: center;
+      margin-bottom: 0.2em;
+      letter-spacing: 0.01em;
+    }
+    .subtitulo-conto {
+      font-size: 1.1em;
+      color: #ffb87e;
+      margin-bottom: 1.3em;
+      font-style: italic;
+      text-align: center;
+    }
+    .texto-conto {
+      font-size: 1.18em;
+      color: #37271a;
+      text-align: justify;
+      line-height: 1.85;
+      max-width: 100%;
+      margin-bottom: 1.6em;
+    }
+    h2 {
+      color: #ba2d2d;
+      font-family: "Playfair Display", serif;
+      font-size: 1.25em;
+      margin-top: 1.7em;
+      margin-bottom: 0.5em;
+    }
+        .botao-voltar {
+      display: inline-block;
+      margin-bottom: 2em;
+      padding: 0.7em 2em;
+      background-color: #ba2d2d;
+      color: #fffbe6;
+      border: none;
+      border-radius: 24px;
+      font-family: "Playfair Display", serif;
+      font-size: 1.1em;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      box-shadow: 0 2px 8px #ba2d2d23;
+    }
+    .botao-voltar:hover, .botao-voltar:focus {
+      background-color: #941d1d;
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay loop muted id="video-bg">
+    <source src="img/mylivewallpapers-com-Doggie-Corgi-Bone-FHD.mp4" type="video/mp4">
+  </video>
+  <div class="conteudo-conto">
+    <a href="contos.html" class="botao-voltar">&larr; Voltar</a>
+    <div class="titulo-conto">Bjorn e Freya – O Urso Polar e a Raposa-do-Ártico</div>
+    <div class="subtitulo-conto">Lenda do Ártico</div>
+    <div class="texto-conto">
+      No coração gelado do Ártico, onde o céu dança com luzes verdes e violetas, vivia Bjorn, um imenso e solitário urso polar. Forte como os ventos do norte, ele era temido por todos os animais, mas sentia um vazio profundo que nem os longos dias de caça conseguiam preencher.<br><br>
+      Certa noite, durante o inverno mais longo em cem anos, uma figura ágil e pequena correu sobre a neve: Freya, uma esperta raposa-do-ártico, de olhos brilhantes como estrelas congeladas.<br><br>
+      — O que faz um urso tão grande andar tão triste? — perguntou ela, ousada.<br><br>
+      — A neve é vasta, mas meu coração está vazio — respondeu Bjorn. — Nenhuma pegada permanece ao meu lado por muito tempo.<br><br>
+      Freya riu baixinho.<br><br>
+      — Talvez seja porque você anda em linha reta demais. Já tentou dançar com as auroras?<br><br>
+      A partir daquele dia, Freya guiou Bjorn pelas montanhas congeladas e lagos de gelo, mostrando que a vida podia ser mais do que sobrevivência. Juntos, eles dançaram sob o céu colorido, ouviram histórias antigas e criaram novas.<br><br>
+      Mas uma tempestade se aproximava.<br><br>
+      O espírito do inverno, Skadi, despertou. Enfurecido pela alegria dos dois, quis cobrir tudo de silêncio e escuridão. Bjorn, para proteger Freya, enfrentou Skadi no alto da geleira mais fria. Seu rugido rachou o céu, e dali nasceu uma nova aurora boreal.<br><br>
+      Freya, com coragem, traçou na neve um símbolo antigo com o focinho. A força da amizade dos dois foi tão poderosa que dissolveu o espírito.<br><br>
+      Bjorn, exausto, se transformou em constelação no céu — e ao lado dele, brilha uma pequena estrela com a forma de uma raposa de cauda longa.<br><br>
+      Desde então, dizem que, quando olhamos para as auroras boreais, podemos ver um urso e uma raposa dançando juntos, lembrando que a amizade verdadeira aquece até os invernos mais longos.
+    </div>
+  </div>
+  <script>
+    const video = document.getElementById("video-bg");
+    video.volume = 0.3;
+  </script>
+</body>
+</html>

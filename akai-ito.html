@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>O Fio Vermelho do Destino (Akai Ito)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(120deg, #ffe39c 0%, #fffbe6 100%);
+      min-height: 100vh;
+      font-family: "Crimson Text", serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .conteudo-conto {
+      background: #fffbe6f7;
+      border-radius: 16px;
+      box-shadow: 0 4px 28px #d1a95b40;
+      max-width: 700px;
+      width: 96vw;
+      padding: 2.5em 2em 2.8em 2em;
+      margin: 3em auto 1.5em auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .titulo-conto {
+      font-family: "Playfair Display", serif;
+      color: #ba2d2d;
+      font-size: 2.3em;
+      text-align: center;
+      margin-bottom: 0.2em;
+      letter-spacing: 0.01em;
+    }
+    .subtitulo-conto {
+      font-size: 1.1em;
+      color: #ffb87e;
+      margin-bottom: 1.3em;
+      font-style: italic;
+      text-align: center;
+    }
+    .texto-conto {
+      font-size: 1.18em;
+      color: #37271a;
+      text-align: justify;
+      line-height: 1.85;
+      max-width: 100%;
+      margin-bottom: 1.6em;
+    }
+    h2 {
+      color: #ba2d2d;
+      font-family: "Playfair Display", serif;
+      font-size: 1.25em;
+      margin-top: 1.7em;
+      margin-bottom: 0.5em;
+    }
+    #video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100vw;
+      min-height: 100vh;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      object-fit: cover;
+      background: linear-gradient(120deg, #ffe39c 0%, #fffbe6 100%);
+    }
+    .botao-voltar {
+      display: inline-block;
+      margin-bottom: 2em;
+      padding: 0.7em 2em;
+      background-color: #ba2d2d;
+      color: #fffbe6;
+      border: none;
+      border-radius: 24px;
+      font-family: "Playfair Display", serif;
+      font-size: 1.1em;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      box-shadow: 0 2px 8px #ba2d2d23;
+    }
+    .botao-voltar:hover, .botao-voltar:focus {
+      background-color: #941d1d;
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+    <main>
+      <video autoplay loop muted id="video-bg">
+        <source src="img/mylivewallpapers-com-Doggie-Corgi-Bone-FHD.mp4" type="video/mp4">
+      </video>
+      <div class="conteudo-conto">
+        <a href="contos.html" class="botao-voltar">&larr; Voltar </a>
+        <div class="titulo-conto">O Fio Vermelho do Destino</div>
+        <div class="subtitulo-conto">Akai Ito – Lenda Japonesa</div>
+        <div class="texto-conto">
+          <h2>Capítulo 1 – O Laço Invisível</h2>
+          Em tempos imemoriais, quando os deuses ainda caminhavam entre os homens, acreditava-se que cada pessoa nascia com um fio vermelho invisível atado ao seu dedo mindinho. Esse fio, inquebrável e eterno, conectava almas destinadas a se encontrar, independentemente do tempo, lugar ou circunstância.<br><br>
+          Na cultura japonesa, esse laço é conhecido como <strong>Akai Ito</strong> (赤い糸), literalmente "fio vermelho". Segundo a lenda, o fio pode se esticar, emaranhar ou embaraçar, mas jamais se rompe, nem mesmo com a morte. Quanto mais longo e emaranhado o fio, mais distante e doloroso será o encontro entre as almas ligadas por ele.
+          <h2>Capítulo 2 – As Origens da Lenda</h2>
+          A lenda do Akai Ito tem raízes na mitologia chinesa, onde se conta que o deus do amor e do casamento, conhecido como <strong>Yuè Xià Lǎorén</strong> ou simplesmente Yuelao, é responsável por unir as almas gêmeas com um fio vermelho atado aos tornozelos. Esse deus é representado como um velho sábio que carrega um livro contendo os nomes dos casais destinados a se unir e uma bolsa com fios vermelhos para amarrá-los.<br><br>
+          Com o tempo, essa crença se espalhou por toda a Ásia, sendo incorporada ao folclore japonês, onde o fio passou a ser atado ao dedo mindinho, simbolizando a ligação direta com o coração.
+          <h2>Capítulo 3 – A Lenda Japonesa</h2>
+          Na versão japonesa da lenda, conta-se que um jovem caminhava para casa quando foi abordado por um velho que lhe disse que ele estava destinado a se casar com uma mulher ligada a ele por um fio vermelho invisível atado ao seu dedo mindinho. O jovem, incrédulo e irritado, atirou uma pedra na direção da moça indicada pelo velho, ferindo-a.<br><br>
+          Anos depois, o jovem tornou-se um homem e se casou com uma mulher que sempre cobria o rosto com um véu. Após o casamento, ele descobriu que sua esposa era a mesma mulher que ele havia ferido na juventude. Assim, compreendeu que o destino havia unido seus caminhos, apesar de suas ações passadas.
+        </div>
+      </div>
+      <script>
+        const video = document.getElementById("video-bg");
+        video.volume = 0.3;
+      </script>
+    </main>
+</body>
+</html>
